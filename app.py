@@ -11,8 +11,3 @@ region = st.selectbox("Select Region:", ["North", "South", "East", "West"])
 
 submitted = st.button("Submit")
 
-if submitted:
-    st.write("### Summary")
-    st.write(f"- **Sales Target:** ${sales_target:,.0f}")
-    st.write(f"- **Region:** {region}")
-    st.success("Dashboard updated successfully!")
