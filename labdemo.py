@@ -18,7 +18,7 @@ if submitted:
         'Date': [Date],
         'Category': [Category],
         'Amount': [Amount],
-        'Description: [\Desription]
+        'Description': [\Desription]
     })
     st.session_state.expenses = pd. concat([st.session_state.expenses, new_expense], ignore_index=True)
     st.success("Expense added successfully!")
