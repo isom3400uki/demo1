@@ -6,12 +6,15 @@ import streamlit as st
 st.title("Business Performance Dashboard")
 msg = " ## Objective: This dashboard provides insights into revenue, customer feedback, and market trends for better business decisions."
 st.write(msg)
+#markdown(#) sth that u wanna format the text
 
 # -------------------------------
 # 2. Columns Layout for Quarterly Revenue
 # -------------------------------
 st.subheader("Quarterly Revenue Overview")
 col1, col2, col3 = st.columns(3)
+
+# if u have 3 columns then 3
 
 with col1:
     st.header("Q1 2024")
@@ -36,6 +39,9 @@ with tab1:
         "Q3 2024": "$1.3M",
         "Q4 2024": "$1.6M"
     }
+    # q1 2024 is key 1.2m is value
+    # .item can extract both
+    # .item fstring,forloop, dictionary
     for quarter, revenue in sales_data.items():
         st.write(f"{quarter}: {revenue}")
     st.bar_chart({"Revenue (in M$)": [1.2, 1.5, 1.3, 1.6]}, height=200)
@@ -49,6 +55,11 @@ with tab2:
     ]
     for feedback in customer_feedback:
         st.write(f"- {feedback}")
+          # markdown(-) its bullet point
+    for idx, feedback in enumerate(customer_feedback, start=1):
+        st.write(f"{idx}. {feedback}")
+        # want 1., 2. 
+      
 
 with tab3:
     st.write("### Market Trends")
