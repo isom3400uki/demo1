@@ -56,8 +56,8 @@ with tab2:
     for feedback in customer_feedback:
         st.write(f"- {feedback}")
           # markdown(-) its bullet point
-    for idx, feedback in enumerate(customer_feedback, start=1):
-        st.write(f"{idx}. {feedback}")
+    for idx, feedback in enumerate(customer_feedback):
+        st.write(f"{idx+1}. {feedback}")
         # want 1., 2. 
       
 
