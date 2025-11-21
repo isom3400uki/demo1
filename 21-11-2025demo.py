@@ -70,6 +70,7 @@ with tab3:
     }
     for trend, status in market_trends.items():
         st.write(f"{trend}: {status}")
+place
 
 # -------------------------------
 # 4. Expander for Additional Information
@@ -98,3 +99,11 @@ st.write(f"Adjusted Revenue for {selected_quarter}: ${adjusted_revenue:.2f}M")
 # -------------------------------
 if st.button("Show Motivation"):
     st.success("Keep pushing for growth! 🚀")
+import streamlit as st
+
+option = st.selectbox(
+    "How would you like to be contacted?",
+    {"Email", "Home phone", "Mobile phone"},
+)
+
+st.write("You selected:", option)
