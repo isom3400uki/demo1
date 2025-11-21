@@ -4,7 +4,8 @@ import streamlit as st
 # 1. Dashboard Title and Objective
 # -------------------------------
 st.title("Business Performance Dashboard")
-st.write("Objective: This dashboard provides insights into revenue, customer feedback, and market trends for better business decisions.")
+msg = "Objective: This dashboard provides insights into revenue, customer feedback, and market trends for better business decisions."
+st.write(msg)
 
 # -------------------------------
 # 2. Columns Layout for Quarterly Revenue
