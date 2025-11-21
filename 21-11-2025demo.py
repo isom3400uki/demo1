@@ -75,7 +75,7 @@ with tab3:
 # 4. Expander for Additional Information
 # -------------------------------
 with st.expander("More Information"):
-    st.write("Data was collected through surveys, customer feedback forms, and official sales reports.")
+    st.write("- Data was collected through surveys, customer feedback forms, and official sales reports.")
 
 # -------------------------------
 # 5. Add Interactivity
