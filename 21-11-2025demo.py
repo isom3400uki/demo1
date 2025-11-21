@@ -107,3 +107,4 @@ option = st.selectbox(
 )
 
 st.write("You selected:", option)
+#it will keeep running backend, it will never end as ur option chnage what it will present w2ill chnage too
